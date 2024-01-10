@@ -1,23 +1,9 @@
-/* Source file https://github.com/MrOtherGuy/firefox-csshacks/tree/master/chrome/autohide_bookmarks_toolbar.css made available under Mozilla Public License v. 2.0
-See the above repository for updates as well as full license text. */
-
 #PersonalToolbar {
-  /* Might need to adjust if the toolbar has other buttons */
   --uc-bm-height: 20px;
-  /* Vertical padding to be applied to bookmarks */
   --uc-bm-padding: 4px;
-  /* The toolbar is hidden after 0.6s */
   --uc-autohide-toolbar-delay: 600ms;
-
-  /* 0deg = "show" ; 90deg = "hide" ;  Set the following to control when bookmarks are shown */
-  /* urlbar is focused */
   --uc-autohide-toolbar-focus-rotation: 0deg;
-  /* cursor is over the toolbar area */
   --uc-autohide-toolbar-hover-rotation: 0deg;
-}
-
-:root[uidensity="touch"] #PersonalToolbar {
-  --uc-bm-padding: 7px
 }
 
 #PersonalToolbar:not([customizing]) {
